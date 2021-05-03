@@ -1,13 +1,13 @@
 {
   "name": "biosinergia.github.io",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": "git@github.com:biosinergia/biosinergia.github.io.git",
   "author": "PinhoOn <pinhoonjob@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel index.pug --out-dir docs",
-    "build": "rm -rf docs && parcel build index.pug --out-dir docs"
+    "dev": "parcel src/index.pug --out-dir docs",
+    "build": "rm -rf docs && parcel build src/index.pug --out-dir docs"
   },
   "devDependencies": {
     "pug": "^3.0.2",
