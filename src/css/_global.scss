@@ -1,0 +1,20 @@
+body {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  background-color: $light-green;
+  z-index: 1;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p,a {
+  font-weight: 700;
+  text-decoration: none;
+  color: $black;
+}
+
+a {
+  font-size: 16px;
+  cursor: pointer; 
+}
