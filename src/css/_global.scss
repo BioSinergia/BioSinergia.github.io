@@ -1,17 +1,18 @@
 body {
-  height: 100%;
-  margin: 0;
-  width: 100%;
-  padding: 0;
   background-color: $light-green;
-  z-index: 1;
   font-family: 'Rajdhani', sans-serif;
+  height: 100%;
+  margin: 0 10px;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+  overflow-y: scroll;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, button {
+  color: $black;
   font-weight: 700;
   text-decoration: none;
-  color: $black;
 }
 
 a {
