@@ -9,19 +9,20 @@
 
   &__logo {
     width: 150px;
-    margin: 0 20px;
+    @media screen and (min-width:711px) {
+      margin: 0 20px;
+    }
     
     @media screen and (max-width:710px) {
       margin: 0 0 0 40px;
     }
-    
   }
 
   &__text {
-    margin-right: 25px;
-  }
+    @media screen and (min-width: 711px) {
+      margin-right: 25px;
+    }
 
-  &__text {  
     @media screen and (max-width: 710px) {
       display: flex;
       flex-direction: column;
@@ -60,11 +61,8 @@
       min-width: 100%;
       visibility: hidden;
       opacity: 0;
-      
     }
   }
-
-
 }
 
 
