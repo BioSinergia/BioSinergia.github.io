@@ -6,58 +6,69 @@
   padding: 0 20px;
 
   @media screen and (min-width: 941px) {
-    margin: 160px auto;
+    margin-top: 160px;
+    margin: 160px auto 0;
   }
   
   @media screen and (max-width: 940px) {
-    width: 95%;
+    max-width: 100%;
     flex-direction: column;
+    margin: 0 auto;
   }
 
   &__desc {
     z-index: 3;
+    display: flex;
+    flex-direction: column;
 
     @media screen and (max-width: 940px) {
-      width: 95%;
-      margin-top: 50px;
+      align-items: center;
+      width: 100%;
+      margin-top: 70px;
     }
   }
 
   &__title {
     margin-top: 0;
-
+    
     @media screen and (min-width: 941px) {
       font-size: 70px;
       max-width: 560px;
     }
-
+    
     @media screen and (max-width: 940px) {
-      font-size: 55px;
-      max-width: 800px;
+      text-align: center;
+      font-size: 55px; 
+      max-width: 90%;
+      line-height: 80px;
     }
 
     @media screen and (max-width: 400px) {
-      font-size: 44px;
-      max-width: 300px;
+      text-align: center;
+      font-size: 40px;
+      max-width: 90%;
     }
   }
 
   &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: $white;
     border: none;
+    border-radius: 5px;
     box-shadow: 0px 0px 10px 0px #0000001A;
     color: $dark-green;
-    font-size: 16px;
-    height: 45px;
     text-transform: uppercase;
+    height: 45px;
 
     @media screen and (min-width: 941px) {
       width: 225px;
-      margin: 0 20px;
+
     }
 
     @media screen and (max-width: 940px) {
-      width: 95%;
+      min-width: 90%;
     }
   }
   
@@ -72,7 +83,7 @@
 
     @media screen and (min-width: 941px) {
       background-size: contain;
-      height: 100%;
+      height: 80%;
       background-position: right top ;
     }
 
@@ -91,12 +102,13 @@
     @media screen and (min-width: 941px) {
       position: absolute;
       right: 20px;
+      top: 15px;
     }
     
     @media screen and (max-width: 940px) {
       align-self: flex-end;
       margin: auto;
-      padding: 0 40px 0 0;
+
       position: relative;
     }
   }
