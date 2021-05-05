@@ -1,0 +1,116 @@
+.hero { 
+  display: flex;
+  height: 800px;
+  position: relative;
+  max-width: 1160px;
+  padding: 0 20px;
+
+  @media screen and (min-width: 941px) {
+    margin-top: 160px;
+    margin: 160px auto 0;
+  }
+  
+  @media screen and (max-width: 940px) {
+    max-width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  &__desc {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 940px) {
+      align-items: center;
+      width: 100%;
+      margin-top: 70px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    
+    @media screen and (min-width: 941px) {
+      font-size: 70px;
+      max-width: 560px;
+    }
+    
+    @media screen and (max-width: 940px) {
+      text-align: center;
+      font-size: 55px; 
+      max-width: 90%;
+    }
+
+    @media screen and (max-width: 400px) {
+      text-align: center;
+      font-size: 40px;
+      max-width: 90%;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #0000001A;
+    color: $dark-green;
+    text-transform: uppercase;
+    height: 45px;
+
+    @media screen and (min-width: 941px) {
+      width: 225px;
+
+    }
+
+    @media screen and (max-width: 940px) {
+      min-width: 90%;
+    }
+  }
+  
+  &__illustration {
+    background-image: url("../assets/image-blob-hero.png");
+    background-repeat: no-repeat;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 0;
+
+    @media screen and (min-width: 941px) {
+      background-size: contain;
+      height: 80%;
+      background-position: right top ;
+    }
+
+    @media screen and (max-width: 940px) {
+      background-size: cover;
+      min-height: 1000px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    max-height: 300px;
+    max-width: 500px;
+    z-index: 1;
+    
+    @media screen and (min-width: 941px) {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+    }
+    
+    @media screen and (max-width: 940px) {
+      align-self: flex-end;
+      margin: auto;
+
+      position: relative;
+    }
+  }
+}
+
+

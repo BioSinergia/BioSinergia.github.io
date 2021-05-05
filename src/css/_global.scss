@@ -1,20 +1,24 @@
 body {
+  background-color: $light-green;
   height: 100%;
   margin: 0;
-  width: 100%;
+  overflow: hidden;
   padding: 0;
-  background-color: $light-green;
-  z-index: 1;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a, button {
   font-family: 'Rajdhani', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, button {
+  color: $black;
   font-weight: 700;
   text-decoration: none;
-  color: $black;
 }
 
-a {
+a, button {
   font-size: 16px;
   cursor: pointer; 
 }
