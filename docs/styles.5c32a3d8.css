@@ -170,14 +170,14 @@ a, button {
   background-repeat: no-repeat;
   display: flex;
   position: absolute;
-  width: 100%;
+  min-width: 100%;
   right: 0;
   top: 0;
 }
 @media screen and (min-width: 941px) {
   .hero__illustration {
     background-size: contain;
-    height: 80%;
+    height: 90%;
     background-position: right top;
   }
 }
@@ -196,7 +196,7 @@ a, button {
 @media screen and (min-width: 941px) {
   .hero__icon {
     position: absolute;
-    right: 20px;
+    right: 40px;
     top: 15px;
   }
 }

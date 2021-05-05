@@ -17,6 +17,10 @@
     }
   }
 
+  &__logo:hover {
+    opacity: .80;
+  }
+
   &__text {
     @media screen and (min-width: 711px) {
       margin-right: 25px;
@@ -48,6 +52,10 @@
     }
   }
 
+  &__button:hover {
+    opacity: .80;
+  }
+
   &__dropdown {
     @media screen and (max-width: 710px) {
       background-color: #ecefda;
@@ -63,5 +71,3 @@
     }
   }
 }
-
-
