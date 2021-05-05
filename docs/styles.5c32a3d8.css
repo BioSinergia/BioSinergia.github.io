@@ -91,7 +91,7 @@ a {
   height: 800px;
   position: relative;
   max-width: 1160px;
-  padding: 0 auto;
+  padding: 0 20px;
 }
 @media screen and (min-width: 941px) {
   .hero {
@@ -115,7 +115,6 @@ a {
 }
 .hero__title {
   margin-top: 0;
-  padding: 0 20px;
 }
 @media screen and (min-width: 941px) {
   .hero__title {
@@ -152,7 +151,6 @@ a {
 }
 @media screen and (max-width: 940px) {
   .hero__button {
-    margin: 30px 20px 0;
     width: 95%;
   }
 }
@@ -188,14 +186,13 @@ a {
   .hero__icon {
     position: absolute;
     right: 20px;
-    padding: 0 auto;
   }
 }
 @media screen and (max-width: 940px) {
   .hero__icon {
     align-self: flex-end;
     margin: auto;
-    padding: 0 10px;
+    padding: 0 40px 0 0;
     position: relative;
   }
 }
