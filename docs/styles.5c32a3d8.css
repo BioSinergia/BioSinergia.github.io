@@ -42,6 +42,9 @@ a, button {
     margin: 0 0 0 20px;
   }
 }
+.header__logo:hover {
+  opacity: 0.8;
+}
 @media screen and (min-width: 711px) {
   .header__text {
     margin-right: 25px;
@@ -72,6 +75,9 @@ a, button {
     right: 40px;
     top: 12px;
   }
+}
+.header__button:hover {
+  opacity: 0.8;
 }
 @media screen and (max-width: 710px) {
   .header__dropdown {
@@ -165,6 +171,9 @@ a, button {
     min-width: 90%;
   }
 }
+.hero__button:hover {
+  opacity: 0.8;
+}
 .hero__illustration {
   background-image: url("/image-blob-hero.392eca70.png");
   background-repeat: no-repeat;
@@ -172,10 +181,10 @@ a, button {
   position: absolute;
   min-width: 100%;
   right: 0;
-  top: 0;
 }
 @media screen and (min-width: 941px) {
   .hero__illustration {
+    top: -100px;
     background-size: contain;
     height: 90%;
     background-position: right top;
@@ -183,6 +192,7 @@ a, button {
 }
 @media screen and (max-width: 940px) {
   .hero__illustration {
+    top: 0;
     background-size: cover;
     min-height: 1000px;
   }
