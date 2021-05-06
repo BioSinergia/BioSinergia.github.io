@@ -232,8 +232,17 @@ a, button {
 
 .dos {
   display: flex;
-  justify-content: space-between;
   position: relative;
+}
+@media screen and (min-width: 791px) {
+  .dos {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 790px) {
+  .dos {
+    flex-direction: column;
+  }
 }
 .dos__container {
   align-items: center;
@@ -256,13 +265,14 @@ a, button {
     font-size: 50px;
   }
 }
+@media screen and (max-width: 790px) {
+  .dos__title {
+    font-size: 40px;
+  }
+}
 .dos__subtitle {
   margin-top: 0;
-}
-@media screen and (min-width: 791px) {
-  .dos__subtitle {
-    font-size: 24px;
-  }
+  font-size: 24px;
 }
 @media screen and (max-width: 790px) {
   .dos__subtitle {
@@ -277,7 +287,16 @@ a, button {
   flex-direction: row;
   flex-wrap: wrap;
   min-height: 530px;
-  width: 70%;
+}
+@media screen and (min-width: 861px) {
+  .dos__row {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .dos__row {
+    width: 90%;
+  }
 }
 .dos__grid {
   align-items: center;
@@ -291,12 +310,23 @@ a, button {
 }
 .dos__icon--name {
   display: flex;
-  font-size: 16px;
-  font-weight: 500;
-  height: 60px;
-  margin-bottom: 60px;
-  max-width: 100px;
   text-align: center;
+  height: 60px;
+}
+@media screen and (min-width: 611px) {
+  .dos__icon--name {
+    font-size: 16px;
+    max-width: 100px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .dos__icon--name {
+    font-size: 14px;
+    max-width: 50px;
+  }
+}
+.dos__icon:not(:first-of-type) {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=/styles.5c32a3d8.css.map */

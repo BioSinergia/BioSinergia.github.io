@@ -1,7 +1,14 @@
 .dos {
   display: flex;
-  justify-content: space-between;
   position: relative;
+
+  @media screen and (min-width: 791px) {
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 790px) {
+    flex-direction: column;
+  }
 
   &__container  {
     align-items: center;
@@ -25,13 +32,17 @@
     @media screen and (min-width: 791px) {
       font-size: 50px;
     }
+
+    @media screen and (max-width: 790px) {
+      font-size: 40px;
+    }
   }
 
   &__subtitle {
     margin-top: 0;
+    font-size: 24px;
 
     @media screen and (min-width: 791px) {
-      font-size: 24px;
     }
 
     @media screen and (max-width:790px) {
@@ -47,7 +58,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 530px;
-    width: 70%;
+    
+    @media screen and (min-width: 861px) {
+      width: 70%;
+    }
+
+    @media screen and (max-width: 860px) {
+      width: 90%;
+    }
   }
 
   &__grid {
@@ -63,12 +81,21 @@
 
     &--name {
       display: flex;
-      font-size: 16px;
-      font-weight: 500;
-      height: 60px;
-      margin-bottom: 60px;
-      max-width: 100px;
       text-align: center;
+      height: 60px;
+
+      @media screen and (min-width: 611px) {
+        font-size: 16px;
+        max-width: 100px;
+      }
+
+      @media screen and (max-width: 610px) {
+        font-size: 14px;
+        max-width: 50px;
+      }
     }
+  }
+  &__icon:not(:first-of-type) {
+    margin-top: 20px;
   }
 }
