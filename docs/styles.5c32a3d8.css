@@ -249,12 +249,28 @@ a, button {
   background-color: #B7C99C;
 }
 .dos__title {
-  font-size: 50px;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 791px) {
+  .dos__title {
+    font-size: 50px;
+  }
+}
 .dos__subtitle {
-  font-size: 24px;
   margin-top: 0;
+}
+@media screen and (min-width: 791px) {
+  .dos__subtitle {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .dos__subtitle {
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+  }
 }
 .dos__row {
   display: flex;
