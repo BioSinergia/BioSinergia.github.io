@@ -1,3 +1,7 @@
+%font { 
+  font-family: 'Rajdhani', sans-serif; 
+}
+
 body {
   background-color: $light-green;
   height: 100%;
@@ -9,16 +13,23 @@ body {
 }
 
 body, h1, h2, h3, h4, h5, h6, p, a, button {
-  font-family: 'Rajdhani', sans-serif;
+  @extend %font;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, button {
+h1, h2, h3, h4, h5, h6, p, a {
   color: $black;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  text-decoration: none;
+}
+
+p, a, button {
+  font-weight: 500;
 }
 
 a, button {
   font-size: 16px;
   cursor: pointer; 
+  text-decoration: none;
 }
