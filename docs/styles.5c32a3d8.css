@@ -225,108 +225,111 @@ a, button {
   }
 }
 
-.is-visible {
-  visibility: visible;
-  opacity: 1;
-}
-
-.dos {
+.box {
   display: flex;
   position: relative;
 }
 @media screen and (min-width: 791px) {
-  .dos {
+  .box {
     justify-content: space-between;
   }
 }
 @media screen and (max-width: 790px) {
-  .dos {
+  .box {
     flex-direction: column;
   }
 }
-.dos__container {
+.box__container {
   align-items: center;
   display: flex;
   flex-direction: column;
   min-height: 700px;
   min-width: 50%;
 }
-.dos__container--can {
+.box__container--can {
   background-color: #FFFFFF;
 }
-.dos__container--cant {
+.box__container--cant {
   background-color: #B7C99C;
 }
-.dos__title {
-  margin-bottom: 10px;
-}
 @media screen and (min-width: 791px) {
-  .dos__title {
+  .box__title {
     font-size: 50px;
+    padding-top: 20px;
   }
 }
 @media screen and (max-width: 790px) {
-  .dos__title {
+  .box__title {
     font-size: 40px;
+    padding-top: 40px;
   }
 }
-.dos__subtitle {
-  margin-top: 0;
+.box__subtitle {
   font-size: 24px;
 }
+@media screen and (min-width: 791px) {
+  .box__subtitle {
+    margin-top: 0;
+  }
+}
 @media screen and (max-width: 790px) {
-  .dos__subtitle {
+  .box__subtitle {
     height: 60px;
     margin: 0 auto;
     padding: 0 10px;
     text-align: center;
   }
 }
-.dos__row {
+.box__row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   min-height: 530px;
 }
 @media screen and (min-width: 861px) {
-  .dos__row {
+  .box__row {
     width: 70%;
   }
 }
 @media screen and (max-width: 860px) {
-  .dos__row {
+  .box__row {
     width: 90%;
   }
 }
-.dos__grid {
+.box__grid {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin: 60px auto;
 }
-.dos__icon {
+.box__icon {
   height: 30px;
   width: 40px;
 }
-.dos__icon--name {
+.box__icon--name {
   display: flex;
   text-align: center;
   height: 60px;
 }
 @media screen and (min-width: 611px) {
-  .dos__icon--name {
+  .box__icon--name {
     font-size: 16px;
     max-width: 100px;
   }
 }
 @media screen and (max-width: 610px) {
-  .dos__icon--name {
+  .box__icon--name {
     font-size: 14px;
     max-width: 50px;
   }
 }
-.dos__icon:not(:first-of-type) {
+.box__icon:not(:first-of-type) {
   margin-top: 20px;
+}
+
+.is-visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=/styles.5c32a3d8.css.map */

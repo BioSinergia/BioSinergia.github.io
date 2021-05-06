@@ -1,4 +1,4 @@
-.dos {
+.box {
   display: flex;
   position: relative;
 
@@ -27,22 +27,22 @@
   }
 
   &__title {
-    margin-bottom: 10px;
-
     @media screen and (min-width: 791px) {
       font-size: 50px;
+      padding-top: 20px;
     }
 
     @media screen and (max-width: 790px) {
       font-size: 40px;
+      padding-top: 40px;
     }
   }
 
   &__subtitle {
-    margin-top: 0;
     font-size: 24px;
-
+    
     @media screen and (min-width: 791px) {
+      margin-top: 0;
     }
 
     @media screen and (max-width:790px) {
@@ -95,6 +95,7 @@
       }
     }
   }
+  
   &__icon:not(:first-of-type) {
     margin-top: 20px;
   }
