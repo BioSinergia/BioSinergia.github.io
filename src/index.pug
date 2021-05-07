@@ -1,8 +1,9 @@
 doctype html 
 html(lang='pt_BR')
-  include ./templates/head.pug
+  include ./templates/_head.pug
   body
+    include ./assets/icons.svg
     include ./templates/_header.pug
     include ./templates/_hero.pug
-    include ./assets/icons.svg
+    include ./templates/_box.pug
   script(src='./index.js' defer)

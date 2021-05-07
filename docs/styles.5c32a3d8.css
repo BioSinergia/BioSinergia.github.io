@@ -1,3 +1,7 @@
+body, h1, h2, h3, h4, h5, h6, p, a, button {
+  font-family: "Rajdhani", sans-serif;
+}
+
 body {
   background-color: #ECEFDA;
   height: 100%;
@@ -8,19 +12,22 @@ body {
   overflow-y: scroll;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, a, button {
-  font-family: "Rajdhani", sans-serif;
+h1, h2, h3, h4, h5, h6, p, a {
+  color: #2E2C27;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, button {
-  color: #2E2C27;
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  text-decoration: none;
+}
+
+p, a, button {
+  font-weight: 500;
 }
 
 a, button {
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .header {
@@ -216,6 +223,108 @@ a, button {
     margin: auto;
     position: relative;
   }
+}
+
+.box {
+  display: flex;
+  position: relative;
+}
+@media screen and (min-width: 791px) {
+  .box {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 790px) {
+  .box {
+    flex-direction: column;
+  }
+}
+.box__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 700px;
+  min-width: 50%;
+}
+.box__container--can {
+  background-color: #FFFFFF;
+}
+.box__container--cant {
+  background-color: #B7C99C;
+}
+@media screen and (min-width: 791px) {
+  .box__title {
+    font-size: 50px;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .box__title {
+    font-size: 40px;
+    padding-top: 40px;
+  }
+}
+.box__subtitle {
+  font-size: 24px;
+}
+@media screen and (min-width: 791px) {
+  .box__subtitle {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 790px) {
+  .box__subtitle {
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+  }
+}
+.box__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 530px;
+}
+@media screen and (min-width: 861px) {
+  .box__row {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .box__row {
+    width: 90%;
+  }
+}
+.box__grid {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 60px auto;
+}
+.box__icon {
+  height: 30px;
+  width: 40px;
+}
+.box__text {
+  display: flex;
+  text-align: center;
+  height: 60px;
+}
+@media screen and (min-width: 611px) {
+  .box__text {
+    font-size: 16px;
+    max-width: 100px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .box__text {
+    font-size: 14px;
+    max-width: 50px;
+  }
+}
+.box__icon:not(:first-of-type) {
+  margin-top: 20px;
 }
 
 .is-visible {
