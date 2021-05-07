@@ -306,19 +306,19 @@ a, button {
   height: 30px;
   width: 40px;
 }
-.box__icon--name {
+.box__text {
   display: flex;
   text-align: center;
   height: 60px;
 }
 @media screen and (min-width: 611px) {
-  .box__icon--name {
+  .box__text {
     font-size: 16px;
     max-width: 100px;
   }
 }
 @media screen and (max-width: 610px) {
-  .box__icon--name {
+  .box__text {
     font-size: 14px;
     max-width: 50px;
   }

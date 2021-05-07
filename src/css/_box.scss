@@ -78,21 +78,21 @@
   &__icon {
     height: 30px;
     width: 40px;
+  }
+  
+  &__text {
+    display: flex;
+    text-align: center;
+    height: 60px;
 
-    &--name {
-      display: flex;
-      text-align: center;
-      height: 60px;
+    @media screen and (min-width: 611px) {
+      font-size: 16px;
+      max-width: 100px;
+    }
 
-      @media screen and (min-width: 611px) {
-        font-size: 16px;
-        max-width: 100px;
-      }
-
-      @media screen and (max-width: 610px) {
-        font-size: 14px;
-        max-width: 50px;
-      }
+    @media screen and (max-width: 610px) {
+      font-size: 14px;
+      max-width: 50px;
     }
   }
   
