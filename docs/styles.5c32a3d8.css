@@ -229,11 +229,20 @@ a, button {
 .how {
   display: flex;
   flex-direction: column;
-  margin: 250px auto 150px;
   max-width: 1160px;
   min-height: 200px;
   padding: 0 10px;
   position: relative;
+}
+@media screen and (min-width: 941px) {
+  .how {
+    margin: 250px auto 150px;
+  }
+}
+@media screen and (max-width: 940px) {
+  .how {
+    margin: 150px auto 100px;
+  }
 }
 .how__title {
   font-size: 50px;
@@ -242,7 +251,6 @@ a, button {
 }
 .how__step {
   display: flex;
-  margin-top: 145px;
   min-height: 400px;
   width: 100%;
 }
@@ -262,6 +270,12 @@ a, button {
     flex-direction: column;
   }
 }
+.how__step:first-of-type {
+  margin-top: 145px;
+}
+.how__step:not(:first-of-type) {
+  margin-top: 100px;
+}
 .how__illustration {
   background-repeat: no-repeat;
   background-size: contain;
@@ -269,6 +283,7 @@ a, button {
   max-width: 450px;
   min-height: 440px;
   width: 100%;
+  background-position: center;
 }
 @media screen and (max-width: 940px) {
   .how__illustration {
@@ -299,7 +314,6 @@ a, button {
 }
 .how__illustration--five {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 481 468'%3E%3Cdefs/%3E%3Cpath fill='%23B7C99C' fill-rule='evenodd' d='M370.2 137.768c29.578 39.424 100.515 46.91 108.957 95.474 8.212 47.245-34.978 90.255-71.205 121.72-30.728 26.689-77.253 19.519-113.259 38.496-36.59 19.285-56.547 66.97-97.517 72.596-42.586 5.848-90.546-10.525-118.7947-42.891-27.6148-31.64-10.9153-81.224-24.2833-121.038C40.8851 262.773 1.86633 233.846.878943 192.339-.209334 146.592 15.9212 98.6818 48.4929 66.507 81.2568 34.1425 130.459 29.2009 175.54 19.8073c45.791-9.5415 97.232-32.5933 137.214-8.3649 40.383 24.4713 29.113 88.5596 57.446 126.3256z' clip-rule='evenodd'/%3E%3C/svg%3E%0A");
-  background-position: center;
 }
 .how__icon {
   display: flex;
@@ -309,26 +323,10 @@ a, button {
 }
 .how__icon--gift {
   padding-left: 40px;
+  align-self: flex-start;
 }
-@media screen and (min-width: 941px) {
-  .how__icon--gift {
-    align-self: flex-start;
-  }
-}
-@media screen and (max-width: 940px) {
-  .how__icon--gift {
-    align-self: center;
-  }
-}
-@media screen and (min-width: 941px) {
-  .how__icon--organics {
-    align-self: flex-start;
-  }
-}
-@media screen and (max-width: 940px) {
-  .how__icon--organics {
-    align-self: center;
-  }
+.how__icon--organics {
+  align-self: flex-start;
 }
 .how__info {
   flex-direction: column;
@@ -337,7 +335,7 @@ a, button {
 .how__num {
   font-size: 70px;
   color: #6BA755;
-  margin-bottom: 0;
+  margin-bottom: -20px;
 }
 .how__subtitle {
   font-size: 36px;
