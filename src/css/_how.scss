@@ -1,11 +1,11 @@
 .how {
   display: flex;
-  position: relative;
   flex-direction: column;
+  margin: 250px auto 150px;
   max-width: 1160px;
   min-height: 200px;
-  margin: 250px auto 150px;
   padding: 0 10px;
+  position: relative;
 
   &__title {
     font-size: 50px;
@@ -15,9 +15,9 @@
 
   &__step {
     display: flex;
+    margin-top: 145px;
     min-height: 400px ;
     width: 100%;
-    margin-top: 145px;
   
     &--row {
       flex-direction: row;
@@ -37,15 +37,14 @@
   }
 
   &__illustration {
-    display: flex;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    max-width: 450px;
     min-height: 440px;
     width: 100%;
-    max-width: 450px;
     
     @media screen and (max-width: 940px) {
-      background-position: center;
       margin: auto;
     }
 
@@ -84,11 +83,10 @@
   }
 
   &__icon {
-    position: relative;
     display: flex;
-    max-width: 65%;
     margin:  10px auto;
-
+    max-width: 65%;
+    position: relative;
 
     &--gift {
       padding-left: 40px;
@@ -111,8 +109,6 @@
         align-self: center;
       }
     }
-
-    &--feedback {}
   }
 
   &__info {

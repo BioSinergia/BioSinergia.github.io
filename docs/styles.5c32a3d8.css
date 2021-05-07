@@ -228,12 +228,12 @@ a, button {
 
 .how {
   display: flex;
-  position: relative;
   flex-direction: column;
+  margin: 250px auto 150px;
   max-width: 1160px;
   min-height: 200px;
-  margin: 250px auto 150px;
   padding: 0 10px;
+  position: relative;
 }
 .how__title {
   font-size: 50px;
@@ -242,9 +242,9 @@ a, button {
 }
 .how__step {
   display: flex;
+  margin-top: 145px;
   min-height: 400px;
   width: 100%;
-  margin-top: 145px;
 }
 .how__step--row {
   flex-direction: row;
@@ -263,16 +263,15 @@ a, button {
   }
 }
 .how__illustration {
-  display: flex;
-  background-size: contain;
   background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  max-width: 450px;
   min-height: 440px;
   width: 100%;
-  max-width: 450px;
 }
 @media screen and (max-width: 940px) {
   .how__illustration {
-    background-position: center;
     margin: auto;
   }
 }
@@ -303,10 +302,10 @@ a, button {
   background-position: center;
 }
 .how__icon {
-  position: relative;
   display: flex;
-  max-width: 65%;
   margin: 10px auto;
+  max-width: 65%;
+  position: relative;
 }
 .how__icon--gift {
   padding-left: 40px;
