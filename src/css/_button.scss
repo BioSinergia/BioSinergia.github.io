@@ -17,3 +17,23 @@
     min-width: 90%;
   }
 }
+
+.button:hover {
+  opacity: .80;
+}
+
+.button--white {
+    background-color: $white;
+    color: $dark-green;
+}
+
+.button--green {
+  background-color: $dark-green;
+  color: white;
+  margin-top: 30px;
+  
+  @media screen and (max-width: 860px) {
+    margin-bottom: 40px;
+    margin-left: 4%;
+  }
+}

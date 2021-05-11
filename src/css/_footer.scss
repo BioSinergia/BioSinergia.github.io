@@ -43,7 +43,9 @@
   }
 
   &__title {
+
     @media screen and (min-width: 861px) {
+      text-align: left;
       font-size: 50px;
       margin-bottom: 0;
     }
@@ -64,17 +66,7 @@
     
     @media screen and (max-width: 860px) {
       font-size: 20px;
-    }
-  }
-
-  &__button {
-    background-color: $dark-green;
-    color: white;
-    margin-top: 30px;
-    
-    @media screen and (max-width: 860px) {
-      margin-bottom: 40px;
-      margin-left: 4%;
+      text-align: center;
     }
   }
 
@@ -84,10 +76,11 @@
       display: flex;
     }
   }
-
+  
   &__item {
     align-items: center;
     display: flex;
+    text-decoration: underline;
 
     @media screen and (min-width: 861px) {
       flex-direction: row;
@@ -98,6 +91,11 @@
       margin-bottom: 20px;
       margin-top: 20px;
     }
+  }
+
+  &__item:hover {
+    text-decoration: none;
+    opacity: .75;
   }
 
   &__icon {
