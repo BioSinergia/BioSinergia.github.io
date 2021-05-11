@@ -1,0 +1,55 @@
+.clients {
+  position: relative;
+  display: flex;
+  min-height: 400px;
+  max-width: 1160px;
+  flex-direction: column;
+  align-items: center;
+  
+  @media screen and (min-width: 901px) {
+    margin: 130px auto;
+  }
+
+  @media screen and (max-width: 900px) {
+    margin: 30px auto;
+  }
+
+  &__title {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__container {
+    display: flex;
+    
+    @media screen and (min-width: 791px) {
+      width: 90%;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 50px;
+    }
+
+    @media screen and (max-width: 790px) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    @media screen and (min-width: 791px) {
+      width: 20%;
+    }
+
+    @media screen and (max-width: 790px) {
+      align-self: center;
+      width: 100%;
+      margin: 30px 0;
+    }
+    
+  }
+}
+

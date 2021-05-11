@@ -30,6 +30,7 @@
     @media screen and (min-width: 791px) {
       font-size: 50px;
       padding-top: 20px;
+      margin-bottom: 20px;
     }
 
     @media screen and (max-width: 790px) {
@@ -59,11 +60,11 @@
     flex-wrap: wrap;
     min-height: 530px;
     
-    @media screen and (min-width: 861px) {
+    @media screen and (min-width: 901px) {
       width: 70%;
     }
 
-    @media screen and (max-width: 860px) {
+    @media screen and (max-width: 900px) {
       width: 90%;
     }
   }
@@ -76,22 +77,21 @@
   }
 
   &__icon {
-    height: 30px;
-    width: 40px;
+    height: 55px;
+    width: 65px;
   }
   
   &__text {
     display: flex;
     text-align: center;
     height: 60px;
+    font-size: 16px;
 
     @media screen and (min-width: 611px) {
-      font-size: 16px;
       max-width: 100px;
     }
 
     @media screen and (max-width: 610px) {
-      font-size: 14px;
       max-width: 50px;
     }
   }
