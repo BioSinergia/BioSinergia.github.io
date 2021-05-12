@@ -18,7 +18,7 @@
   &__content {
     display: flex;
     flex-direction: column;
-    margin: 0 15px;
+    margin: 0 15px 0 50px;
     
     @media screen and (min-width: 861px) {
       max-height: 500px;
@@ -103,5 +103,3 @@
     to {opacity: 0;}  
   }
 }
-
-
