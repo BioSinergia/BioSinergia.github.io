@@ -54,6 +54,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
+    height: auto;
     
     @media screen and (min-width: 861px) {
       margin: 0 15px 0 100px;
@@ -71,7 +72,7 @@
     margin: auto;
     
     @media screen and (min-width: 861px) {
-      width: 35%;
+      width: 100%;
     }
 
     @media screen and (max-width: 860px) {
@@ -79,27 +80,29 @@
     }
   }
 
-  &__animated {
-    animation-duration: 2s;
+  &__icon {
+    animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-name: blink;
+    animation-name: spark;
     opacity: 1;
   }
 
-  &__animated--1 {
-    animation-delay: 1s;
+  &__icon--spark:nth-child(1n) {
+    animation-delay: .75s;
   }
 
-  &__animated--2 {
-    animation-delay: 1.5s;
+  &__icon--spark:nth-child(2n) {
+    animation-delay: .5s;
   }
 
-  &__animated--3 {
-    animation-delay: 2s;
+  &__icon--spark:nth-child(3n) {
+    animation-delay: .25s;
   }
 
-  @keyframes blink {
-    from {opacity: 1;}
-    to {opacity: 0;}  
+  &__bucket {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: bucket;
+    transform-origin: center;
   }
 }
