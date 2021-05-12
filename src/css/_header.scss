@@ -11,6 +11,7 @@
 
   &__logo {
     width: 150px;
+    transition: .5s;
 
     @media screen and (max-width:940px) {
       margin: 0 0 0 20px;
@@ -22,6 +23,8 @@
   }
 
   &__text {
+    transition: .5s;
+
     @media screen and (min-width: 711px) {
       margin-right: 25px;
       font-weight: bold;
@@ -33,6 +36,10 @@
       margin: 15px 0 0 40px;
       position: relative;
     }
+  }
+
+  &__text:hover {
+    opacity: .75;
   }
 
   &__button {
