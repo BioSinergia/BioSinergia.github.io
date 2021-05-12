@@ -83,7 +83,10 @@
   &__icon {
     animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-name: spark;
+  }
+  
+  &__icon--spark {
+    animation-name: fade;
     opacity: 1;
   }
 
@@ -99,10 +102,8 @@
     animation-delay: .25s;
   }
 
-  &__bucket {
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-name: bucket;
+  &__icon--bucket {
+    animation-name: shake;
     transform-origin: center;
   }
 }
