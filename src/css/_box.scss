@@ -59,14 +59,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 530px;
-    
-    @media screen and (min-width: 901px) {
-      width: 70%;
-    }
-
-    @media screen and (max-width: 900px) {
-      width: 90%;
-    }
+    width: 90%;
   }
 
   &__grid {
