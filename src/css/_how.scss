@@ -43,13 +43,24 @@
   }
 
   &__step:first-of-type {
-    margin-top: 145px;
+    @media screen and (min-width: 941px) {
+      margin-top: 145px;
+    }
+
+    @media screen and (max-width: 940px) {
+      margin-top: 45px;
+    }
   }
 
   &__step:not(:first-of-type) {
-    margin-top: 100px;
-  }
+    @media screen and (min-width: 941px) {
+      margin-top: 100px;
+    }
 
+    @media screen and (max-width: 940px) {
+      margin-top: 50px;
+    }
+  }
 
   &__illustration {
     background-position: center;
