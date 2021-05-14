@@ -24,21 +24,21 @@
     display: flex;
     min-height: 400px;
     width: 100%;
+    
+    @media screen and (max-width: 940px) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__step--row {
-    flex-direction: row;
-    
-    @media screen and (max-width: 940px) {
-      flex-direction: column;
+    @media screen and (min-width:941px) {
+      flex-direction: row;
     }
   }
 
   &__step--reverse {
-    flex-direction: row-reverse;
-    
-    @media screen and (max-width: 940px) {
-      flex-direction: column;
+    @media screen and (min-width:941px) {
+      flex-direction: row-reverse;
     }
   }
 
@@ -58,7 +58,7 @@
     }
 
     @media screen and (max-width: 940px) {
-      margin-top: 50px;
+      margin-top: 0;
     }
   }
 
@@ -68,11 +68,20 @@
     background-size: contain;
     display: flex;
     max-width: 450px;
-    min-height: 440px;
-    width: 100%;
+    
+    @media screen and (min-width: 941px) {
+      width: 100%;
+      min-height: 440px;
+    }
     
     @media screen and (max-width: 940px) {
       margin: auto;
+      width: 70%;
+      min-height: 400px;
+    }
+
+    @media screen and (max-width: 500px) {
+      min-height: 250px;
     }
   }
 
@@ -114,6 +123,7 @@
     margin: auto;
     max-width: 65%;
     position: relative;
+    width: 100%;
   }
 
   &__icon--gift {
@@ -134,6 +144,7 @@
     font-size: 70px;
     color: $dark-green;
     margin-bottom: -20px;
+    margin-top: 25px;
   }
 
   &__subtitle {
