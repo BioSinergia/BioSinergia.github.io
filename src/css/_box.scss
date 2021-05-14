@@ -92,4 +92,12 @@
   &__icon:not(:first-of-type) {
     margin-top: 20px;
   }
+
+  &__icon--can {
+    animation: pulse 1s ease-in-out infinite both;
+  }
+
+  &__icon--cant {
+    animation: shake 2s infinite;
+  }
 }
