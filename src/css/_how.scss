@@ -68,15 +68,20 @@
     background-size: contain;
     display: flex;
     max-width: 450px;
-    min-height: 250px;
-
+    
     @media screen and (min-width: 941px) {
       width: 100%;
+      min-height: 440px;
     }
     
     @media screen and (max-width: 940px) {
       margin: auto;
       width: 70%;
+      min-height: 400px;
+    }
+
+    @media screen and (max-width: 500px) {
+      min-height: 250px;
     }
   }
 
