@@ -32,12 +32,14 @@
 
   &__step--row {
     @media screen and (min-width:941px) {
+      display: flex;
       flex-direction: row;
     }
   }
 
   &__step--reverse {
     @media screen and (min-width:941px) {
+      display: flex;
       flex-direction: row-reverse;
     }
   }
@@ -127,16 +129,19 @@
   }
 
   &__icon--gift {
+    display: flex;
     padding-left: 40px;
     align-self: flex-start;
+    animation: jelly 2s infinite;
   }
 
   &__icon--organics {
+    display: flex;
     align-self: flex-start;
+    animation: vibrate 10s linear infinite both;
   }
 
   &__info {
-    flex-direction: column;
     
     @media screen and (min-width: 941px) {
       padding: 0 40px;
@@ -174,4 +179,16 @@
       margin-top: -20px;
     }
   }
+
+  &__icon--residence {
+    animation: pulse 1s infinite;
+  }
+
+  &__icon--process {
+    animation: rotate 5s infinite;
+  }
+
+  &__icon--feedback {
+      animation: pulsate-fwd 2s ease-in-out infinite both;
+    }
 }

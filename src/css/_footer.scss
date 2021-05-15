@@ -39,6 +39,7 @@
 
   &__grid--left {
     @media screen and (min-width: 861px) {
+      display: flex;
       align-self: flex-start;
     }
   }
