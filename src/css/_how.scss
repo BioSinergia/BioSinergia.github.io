@@ -137,7 +137,14 @@
 
   &__info {
     flex-direction: column;
-    padding: 0 40px;
+    
+    @media screen and (min-width: 941px) {
+      padding: 0 40px;
+    }
+
+    @media screen and (max-width: 940px) {
+      padding: 0 25px;
+    }
   }
 
   &__num {
