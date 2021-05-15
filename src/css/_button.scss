@@ -7,16 +7,10 @@
   font-weight: bold;
   height: 45px;
   justify-content: center;
+  max-width: 225px;
   text-transform: uppercase;
   transition: .5s;
-
-  @media screen and (min-width: 941px) {
-    width: 225px;
-  }
-
-  @media screen and (max-width: 940px) {
-    min-width: 90%;
-  }
+  width: 90%;
 }
 
 .button:hover {
@@ -24,17 +18,15 @@
 }
 
 .button--white {
-    background-color: $white;
-    color: $dark-green;
+  background-color: $white;
+  color: $dark-green;
 }
 
 .button--green {
   background-color: $dark-green;
   color: white;
-  margin-top: 30px;
   
   @media screen and (max-width: 860px) {
-    margin-bottom: 40px;
-    margin-left: 4%;
+    margin: 10px auto 40px;
   }
 }
