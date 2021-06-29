@@ -1,14 +1,29 @@
-section#parceiros.clients
-  h1.clients__title Nossos Parceiros 
-  h3.clients__subtitle Empresas que nos apoiam nesse Jornada
-  .clients__container
-    a.clients__block(href="https://www.instagram.com/alexrestaurante/" target="_blank")
-      img.clients__logo(src="./assets/parceiro-alex-restaurante.png", alt="Instagram Alex Restaurante")
-    a.clients__block(href="https://www.instagram.com/alexemcasa/")
-      img.clients__logo(src="./assets/parceiro-alex-em-casa.png", alt="Instagram Alex Em Casa")
-    a.clients__block(href="https://ftteng.com.br/" target="_blank")
-      img.clients__logo(src="./assets/parceiro-ftteng.png" alt="Ftt Eng")
-    a.clients__block(href="https://www.instagram.com/pub_do_pastel/" target="_blank")
-      img.clients__logo(src="./assets/parceiro-pub-do-pastel.png" alt="Instagram Pub Do Pastel")
-    a.clients__block(href="https://www.instagram.com/estudiosemear/" target="_blank")
-      img.clients__logo(src="./assets/parceiro-estudio-semear.png" alt="Instagram Estudio Semear")
+section#parceiros.partners
+  h1.partners__title Nossos Parceiros 
+  h3.partners__subtitle Empresas que nos apoiam nesse Jornada
+  .partners__container
+    a.partners__block(href="https://www.instagram.com/alexrestaurante/" target="_blank" rel="noopener")
+      picture
+        source(srcset='./assets/parceiro-alex-restaurante.webp', type='image/webp')
+        source(srcset='./assets/parceiro-alex-restaurante.png', type='image/png')
+        img.partners__logo(src="./assets/parceiro-alex-restaurante.png", alt="Instagram Alex Restaurante")
+    a.partners__block(href="https://www.instagram.com/alexemcasa/")
+      picture
+        source(srcset='./assets/parceiro-alex-em-casa.webp', type='image/webp')
+        source(srcset='./assets/parceiro-alex-em-casa.png', type='image/png')
+        img.partners__logo(src="./assets/parceiro-alex-em-casa.png", alt="Instagram Alex Em Casa")
+    a.partners__block(href="https://ftteng.com.br/" target="_blank" rel="noopener")
+      picture
+        source(srcset='./assets/parceiro-ftteng.webp', type='image/webp')
+        source(srcset='./assets/parceiro-ftteng.png', type='image/png')
+        img.partners__logo(src="./assets/parceiro-ftteng.png" alt="Ftt Eng")
+    a.partners__block(href="https://www.instagram.com/pub_do_pastel/" target="_blank" rel="noopener")
+      picture
+        source(srcset='./assets/parceiro-pub-do-pastel.webp', type='image/webp')
+        source(srcset='./assets/parceiro-pub-do-pastel.png', type='image/png')
+        img.partners__logo(src="./assets/parceiro-pub-do-pastel.png" alt="Instagram Pub Do Pastel")
+    a.partners__block(href="https://www.instagram.com/estudiosemear/" target="_blank" rel="noopener")
+      picture
+        source(srcset='./assets/parceiro-estudio-semear.webp', type='image/webp')
+        source(srcset='./assets/parceiro-estudio-semear.png', type='image/png')
+        img.partners__logo(src="./assets/parceiro-estudio-semear.png" alt="Instagram Estudio Semear")
